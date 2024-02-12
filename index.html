@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mileage Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+
+<body class="bg-blue-900">
+
+    <div class="flex justify-center items-center h-screen">
+        
+        <div class="bg-white p-8 rounded-lg shadow-md max-w-md">
+
+            <h2 class="text-2xl font-semibold mb-4">⛽  Fuel Cost Calculator</h2>
+
+            <div class="mb-4">
+                <label for="distance" class="text-gray-600">Trip Distance</label>
+                <input id="distance" type="number" class="block w-full mt-1  border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 outline-none">
+            </div>
+
+            <div class="mb-4">
+                <label for="fuel" class="text-gray-600">Fuel Efficiency</label>
+                <input id="fuel" type="number" class="block px-2 w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 outline-none" >
+            </div>
+
+            <div class="mb-4">
+                <label for="fuelprice" class="text-gray-600">Fuel Price</label>
+                <input id="fuelprice" type="number" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 outline-none">
+            </div>
+
+            <button id="calculatebtn" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Calculate</button>
+
+            <div id="result" class="mt-4 text-green-800"></div>
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
